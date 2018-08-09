@@ -36,12 +36,16 @@
 				</a-torus-knot>
 			</a-box>
 		</a-marker>
+
+		<a-marker preset='liheng' id='marker-liheng' registerevents>
+				<a-box></a-box> 
+		</a-marker>
  		<!-- handle matrix marker -->
 		<!-- 'emitevents' will make the marker emit events when it is found and lost
 		but, since there are no registered listeners for these events, you will not see any effect.
 		You can register event listeners in your own custom component, defined similarly to
 		the 'registerevents' in the inline script above -->
-		<a-marker type='barcode' value='5' id='marker-barcode-5' emitevents='true'>
+		<a-marker type='barcode' value='5' id='marker-barcode-5'>
 		</a-marker>
  		<!-- add a simple camera -->
 		<a-entity camera></a-entity>

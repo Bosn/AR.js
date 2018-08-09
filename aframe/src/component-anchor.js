@@ -83,6 +83,10 @@ AFRAME.registerComponent('arjs-anchor', {
 				markerParameters.type = 'pattern'
 				markerParameters.patternUrl = THREEx.ArToolkitContext.baseURL + 'examples/marker-training/examples/pattern-files/pattern-hiro.patt'
 				markerParameters.markersAreaEnabled = false
+			} else if (_this.data.preset === 'liheng') {
+				markerParameters.type = 'pattern'
+				markerParameters.patternUrl = THREEx.ArToolkitContext.baseURL + 'examples/marker-training/examples/pattern-files/liheng.patt'
+				markerParameters.markersAreaEnabled = false
 			} else if (_this.data.preset === 'kanji') {
 				markerParameters.type = 'pattern'
 				markerParameters.patternUrl = THREEx.ArToolkitContext.baseURL + 'examples/marker-training/examples/pattern-files/pattern-kanji.patt'

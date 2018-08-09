@@ -5253,7 +5253,7 @@ Object.assign( ARjs.Context.prototype, THREE.EventDispatcher.prototype );
 
 // ARjs.Context.baseURL = '../'
 // default to github page
-ARjs.Context.baseURL = 'https://jeromeetienne.github.io/AR.js/three.js/'
+ARjs.Context.baseURL = '/AR.js/three.js/'
 ARjs.Context.REVISION = '1.6.0'
 
 
@@ -8281,6 +8281,10 @@ AFRAME.registerComponent('arjs-anchor', {
 			if (_this.data.preset === 'hiro') {
 				markerParameters.type = 'pattern'
 				markerParameters.patternUrl = THREEx.ArToolkitContext.baseURL + 'examples/marker-training/examples/pattern-files/pattern-hiro.patt'
+				markerParameters.markersAreaEnabled = false
+			} else if (_this.data.preset === 'liheng') {
+				markerParameters.type = 'pattern'
+				markerParameters.patternUrl = THREEx.ArToolkitContext.baseURL + 'examples/marker-training/examples/pattern-files/liheng.patt'
 				markerParameters.markersAreaEnabled = false
 			} else if (_this.data.preset === 'kanji') {
 				markerParameters.type = 'pattern'
